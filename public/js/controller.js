@@ -43,7 +43,7 @@ function getShipmentData() {
 				var obj = data[i];
 
 				$.ajax({
-					type: 'GET',
+					type: 'POST',
 					url: 'https://calm-shelf-58861.herokuapp.com/',
 					data: JSON.stringify(obj),
 					contentType: 'application/json',
