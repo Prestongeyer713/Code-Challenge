@@ -7,7 +7,7 @@ ChallengeCtrl.$inject = ['$http', '$scope'];
 
 function ChallengeCtrl($http, $scope) {
 	var cCtrl = this;
-	console.log('Controller loaded!');
+	console.log('Controller loaded Succesfully!');
 	cCtrl.welcomeMessage = 'Get The Most Updated Tracking Information!';
 
 	getShipmentData();
@@ -49,6 +49,10 @@ function getShipmentData() {
 					contentType: 'application/json',
 					dataType: 'json',
 					success: console.log('Updating Shipment Data'),
+					500: function(){
+						document.getElementById(element).innerHTML = "🗸"
+						location.reload()
+					} 
 				});
 			}
 		}
