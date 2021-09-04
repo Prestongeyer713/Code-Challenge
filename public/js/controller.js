@@ -48,6 +48,7 @@ function getShipmentData() {
 					contentType: 'application/json',
 					dataType: 'json',
 					success: console.log('Updating Shipment Data'),
+					url: 'https://calm-shelf-58861.herokuapp.com/',
 				});
 			}
 		}
