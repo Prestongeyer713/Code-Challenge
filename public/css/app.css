@@ -1,0 +1,29 @@
+table.center {
+	width: 800px;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+
+	border-radius: 100px;
+
+	box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+td {
+	font-size: 15px;
+	color: #1ec2ce;
+	line-height: 2;
+}
+
+td.header {
+	font-size: 18px;
+	color: #fff;
+	line-height: 2;
+
+	background-color: #000000;
+}
+
+tr:nth-child(even) {
+	background-color: #f8f6ff;
+}
