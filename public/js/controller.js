@@ -41,6 +41,7 @@ function getShipmentData() {
 		function (data) {
 			for (var i = 0; i < data.length; i++) {
 				var obj = data[i];
+				console.log(obj);  
 
 				$.ajax({
 					type: 'POST',
